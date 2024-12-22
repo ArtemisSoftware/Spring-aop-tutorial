@@ -1,4 +1,4 @@
-package com.artemissoftware.spring_aop.apects
+package com.artemissoftware.spring_aop.aspects
 
 import org.aspectj.lang.ProceedingJoinPoint
 import org.aspectj.lang.annotation.Around
@@ -12,7 +12,7 @@ class PerformanceTrackingAspect {
 
     private val logger = LoggerFactory.getLogger(javaClass)
 
-    @Around("execution(* com.artemissoftware.spring_aop.*.*.*(..))")
+    @Around("com.artemissoftware.spring_aop.aspects.CommonPointcutConfig.businessAndDataPackageConfig()")
     @Throws(Throwable::class)
     fun findExecutionTime(proceedingJoinPoint: ProceedingJoinPoint): Any {
         //Start a timer

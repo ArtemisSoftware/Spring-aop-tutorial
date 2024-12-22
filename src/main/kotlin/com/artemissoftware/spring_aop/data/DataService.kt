@@ -1,4 +1,4 @@
-package com.artemissoftware.spring_aop.business
+package com.artemissoftware.spring_aop.data
 
 import org.springframework.stereotype.Repository
 
