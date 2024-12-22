@@ -12,7 +12,8 @@ class PerformanceTrackingAspect {
 
     private val logger = LoggerFactory.getLogger(javaClass)
 
-    @Around("com.artemissoftware.spring_aop.aspects.CommonPointcutConfig.businessAndDataPackageConfig()")
+    //@Around("com.artemissoftware.spring_aop.aspects.CommonPointcutConfig.businessAndDataPackageConfig()")
+    @Around("com.artemissoftware.spring_aop.aspects.CommonPointcutConfig.trackTimeAnnotation()")
     @Throws(Throwable::class)
     fun findExecutionTime(proceedingJoinPoint: ProceedingJoinPoint): Any {
         //Start a timer
