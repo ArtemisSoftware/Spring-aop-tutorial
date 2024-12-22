@@ -1,11 +1,10 @@
-package com.artemissoftware.spring_aop
+package com.artemissoftware.spring_aop.business
 
-import com.artemissoftware.spring_aop.business.DataService
 import org.springframework.stereotype.Service
 
 
 @Service
-class BusinessService(
+class BusinessMaxService(
     private val dataService: DataService
 ) {
     fun calculateMax() = dataService.retrieveData().max()
