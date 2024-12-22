@@ -8,5 +8,5 @@ import org.springframework.stereotype.Service
 class BusinessService(
     private val dataService: DataService
 ) {
-    fun calculateMax() = dataService.retrieveData().max().or(0)
+    fun calculateMax() = dataService.retrieveData().max()
 }

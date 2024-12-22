@@ -5,6 +5,9 @@ import org.springframework.stereotype.Repository
 @Repository
 class DataService {
 
-    fun retrieveData() = listOf(11, 22, 33, 44, 55)
+    fun retrieveData(): List<Int> {
+        //throw RuntimeException("ERROR ERROR")
+        return listOf(11, 22, 33, 44, 55)
+    }
 
 }
